@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    top: 0px;
+}
+
+body{
+    cursor:url('./Imagenes/arrow.cur'), auto;
+    background-color: #ff0000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='600' y1='25' x2='600' y2='777'%3E%3Cstop offset='0' stop-color='%23ff0000'/%3E%3Cstop offset='1' stop-color='%23E0F'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='650' y1='25' x2='650' y2='777'%3E%3Cstop offset='0' stop-color='%23ff0019'/%3E%3Cstop offset='1' stop-color='%23ce00f3'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='700' y1='25' x2='700' y2='777'%3E%3Cstop offset='0' stop-color='%23ff0031'/%3E%3Cstop offset='1' stop-color='%23b000e6'/%3E%3C/linearGradient%3E%3ClinearGradient id='d' gradientUnits='userSpaceOnUse' x1='750' y1='25' x2='750' y2='777'%3E%3Cstop offset='0' stop-color='%23ff004a'/%3E%3Cstop offset='1' stop-color='%239400da'/%3E%3C/linearGradient%3E%3ClinearGradient id='e' gradientUnits='userSpaceOnUse' x1='800' y1='25' x2='800' y2='777'%3E%3Cstop offset='0' stop-color='%23ff0063'/%3E%3Cstop offset='1' stop-color='%237a00ce'/%3E%3C/linearGradient%3E%3ClinearGradient id='f' gradientUnits='userSpaceOnUse' x1='850' y1='25' x2='850' y2='777'%3E%3Cstop offset='0' stop-color='%23ff007c'/%3E%3Cstop offset='1' stop-color='%236200c1'/%3E%3C/linearGradient%3E%3ClinearGradient id='g' gradientUnits='userSpaceOnUse' x1='900' y1='25' x2='900' y2='777'%3E%3Cstop offset='0' stop-color='%23ff0094'/%3E%3Cstop offset='1' stop-color='%234d00b5'/%3E%3C/linearGradient%3E%3ClinearGradient id='h' gradientUnits='userSpaceOnUse' x1='950' y1='25' x2='950' y2='777'%3E%3Cstop offset='0' stop-color='%23ff00ad'/%3E%3Cstop offset='1' stop-color='%233900a8'/%3E%3C/linearGradient%3E%3ClinearGradient id='i' gradientUnits='userSpaceOnUse' x1='1000' y1='25' x2='1000' y2='777'%3E%3Cstop offset='0' stop-color='%23ff00c6'/%3E%3Cstop offset='1' stop-color='%2328009c'/%3E%3C/linearGradient%3E%3ClinearGradient id='j' gradientUnits='userSpaceOnUse' x1='1050' y1='25' x2='1050' y2='777'%3E%3Cstop offset='0' stop-color='%23ff00df'/%3E%3Cstop offset='1' stop-color='%23180090'/%3E%3C/linearGradient%3E%3ClinearGradient id='k' gradientUnits='userSpaceOnUse' x1='1100' y1='25' x2='1100' y2='777'%3E%3Cstop offset='0' stop-color='%23ff00f7'/%3E%3Cstop offset='1' stop-color='%230b0083'/%3E%3C/linearGradient%3E%3ClinearGradient id='l' gradientUnits='userSpaceOnUse' x1='1150' y1='25' x2='1150' y2='777'%3E%3Cstop offset='0' stop-color='%23E0F'/%3E%3Cstop offset='1' stop-color='%23007'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg %3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' x='100' width='1100' height='800'/%3E%3Crect fill='url(%23c)' x='200' width='1000' height='800'/%3E%3Crect fill='url(%23d)' x='300' width='900' height='800'/%3E%3Crect fill='url(%23e)' x='400' width='800' height='800'/%3E%3Crect fill='url(%23f)' x='500' width='700' height='800'/%3E%3Crect fill='url(%23g)' x='600' width='600' height='800'/%3E%3Crect fill='url(%23h)' x='700' width='500' height='800'/%3E%3Crect fill='url(%23i)' x='800' width='400' height='800'/%3E%3Crect fill='url(%23j)' x='900' width='300' height='800'/%3E%3Crect fill='url(%23k)' x='1000' width='200' height='800'/%3E%3Crect fill='url(%23l)' x='1100' width='100' height='800'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.fa-heart {
+    color: pink;
+    font-size: 25px;
+    position: absolute;
+    animation:  heartMove linear 1;
+    top: -10vh;
+    z-index: -1;
+}
+
+#FC {
+    animation: happybday linear 3s infinite running;
+    
+}
+
+@keyframes happybday {
+    0%{
+        transform: scale(70%) ;
+    }
+    50%{
+        transform: scale(100%);
+    }
+    100%{
+        transform: scale(70%);
+    }
+}
+
+@keyframes heartMove {
+    0%{
+        transform: translateY(-10vh) ;
+    }
+    100%{
+        transform: translateY(110vh) ;
+    }
+}
+</style>
+<body class="h-screen w-screen overflow-hidden flex flex-col items-center justify-center gap-[10px] mt-[30px]">
+    <audio controls autoplay loop class="w-full h-[20px] place-self-start hidden">
+        <source src="./Sonido/fightSong.mp3" type="audio/mpeg">
+    </audio>
+    <div class="outline outline-[pink] bg-[black]/30 p-[10px]">
+        <p id="FC" class="text-[40px] font-bold text-[pink]">¡Happy Birthday to you my love!</p>
+    </div>
+    <div>
+        <p class="text-[20px] bg-white/30 rounded p-[10px] text-[pink]">I hope you party like a rockstar! and i wish this year brings you lots of happiness and joy and let the wishes from your heart come true!</p>
+    </div>
+    <div class="flex flex-col gap-[30px] items-center">
+        <div id="nombre" class="flex gap-[50px] ">
+            <div class="flex gap-[10px]">
+                <div class="w-[70px] h-[70px] bg-rose-400 drop-shadow-md rounded-md flex justify-center items-center text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">J</div>
+                <div class="w-[70px] h-[70px] bg-rose-400 drop-shadow-md rounded-md flex justify-center items-center text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">O</div>
+                <div class="w-[70px] h-[70px] bg-rose-400 drop-shadow-md rounded-md flex justify-center items-center text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">V</div>
+                <div class="w-[70px] h-[70px] bg-rose-400 drop-shadow-md rounded-md flex justify-center items-center text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">Y</div>
+            </div>
+            <div class="flex gap-[10px]">
+                <div class="w-[70px] h-[70px] bg-rose-400 rounded-md flex justify-center items-center text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">C</div>
+                <div class="w-[70px] h-[70px] bg-rose-400 rounded-md flex justify-center items-center text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">O</div>
+                <div class="w-[70px] h-[70px] bg-rose-400 rounded-md flex justify-center items-center text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">R</div>
+                <div class="w-[70px] h-[70px] bg-rose-400 rounded-md flex justify-center items-center text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">D</div>
+                <div class="w-[70px] h-[70px] bg-rose-400 rounded-md flex justify-center items-center text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">O</div>
+                <div class="w-[70px] h-[70px] bg-rose-400 rounded-md flex justify-center items-center text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">V</div>
+                <div class="w-[70px] h-[70px] bg-rose-400 rounded-md flex justify-center items-center text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">A</div>
+            </div>
+        </div>
+        
+        <div class="flex items-center gap-[10px]">
+            <!-- <div tabindex="0" onclick="cambioIzquierda()" class="select-none flex w-[40px] h-[40px] rounded-[50%] bg-[pink]/50 items-center justify-center">
+                <span class="material-symbols-outlined text-black">arrow_back_ios</span>
+            </div> -->
+            <div id="carrusel" class="w-[500px] h-[400px] bg-contain bg-no-repeat bg-center rounded-xl bg-white/30">
+            </div>
+            <!-- <div tabindex="0" onclick="cambioDerecha()" class="select-none flex w-[40px] h-[40px] rounded-[50%] bg-[pink]/50 items-center justify-center">
+                <span class="material-symbols-outlined text-black">arrow_forward_ios</span>
+            </div> -->
+        </div>
+    </div>
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="index.js"></script>
+<script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+</html>
