@@ -30,7 +30,7 @@ body{
     position: absolute;
     animation:  heartMove linear 1;
     top: -10vh;
-    z-index: -1;
+    z-index: -10;
 }
 
 #FC {
@@ -59,47 +59,41 @@ body{
     }
 }
 </style>
-<body class="h-screen w-screen overflow-hidden flex flex-col items-center justify-center gap-[10px]">
+<body class="h-screen w-screen overflow-hidden flex flex-col items-center sm:justify-center min-[300px]:my-[20px]  sm:gap-[10px]">
     
-    <img src="./Imagenes/flechaControl.png" class="w-[50px] h-[50px] flex absolute top-[83%] left-[75%]" alt="">
-    <img src="./Imagenes/flechaControl.png" class="w-[50px] h-[50px] flex absolute top-[87%] left-[75%]" alt="">
-    <audio controls autoplay loop class="w-[300px] h-[20px] flex absolute top-[95%] left-[75%]">
+    <img src="./Imagenes/flechaControl.png" class="min-[300px]:w-[30px] min-[300px]:h-[30px] sm:w-[50px] sm:h-[50px] flex absolute min-[300px]:top-[87%] sm:top-[83%] min-[300px]:left-[73%] sm:left-[75%]" alt="">
+    <img src="./Imagenes/flechaControl.png" class="min-[300px]:w-[30px] min-[300px]:h-[30px] sm:w-[50px] sm:h-[50px] flex absolute min-[300px]:top-[90%] sm:top-[87%] min-[300px]:left-[73%] sm:left-[75%]" alt="">
+    <audio controls loop class="min-[300px]:w-[100px] min-[300px]:h-[20px] sm:w-[300px] sm:h-[20px] flex absolute top-[95%] min-[300px]:left-[70%] sm:left-[75%]">
         <source src="./Sonido/fightSong.mp3" type="audio/mpeg">
     </audio>
-    <div class="outline outline-[pink] bg-[black]/30 p-[10px]">
-        <p id="FC" class="text-[40px] font-bold text-[pink]">¡Happy Birthday to you, Señorita Bonita!</p>
+    <div class="outline outline-[pink] bg-[black]/30 sm:p-[10px]">
+        <p id="FC" class="sm:text-[40px] font-bold text-[pink] min-[300px]:justify-self-start">¡Happy Birthday to you, Señorita Bonita!</p>
     </div>
-    <div>
-        <p class="text-[20px] bg-white/30 rounded p-[10px] text-[pink]">I hope you party like a rockstar! and i wish this year brings you lots of happiness and joy and let the wishes from your heart come true!</p>
+    <div class="flex z-10">
+        <p class="flex z-10 sm:text-[20px] bg-white/30 rounded sm:p-[10px] text-[pink] min-[300px]:mt-[20px] min-[300px]:mx-[5px] min-[300px]:p-[2px]">I hope you party like a rockstar! and i wish this year brings you lots of happiness and joy and let the wishes from your heart come true!</p>
     </div>
-    <div class="flex flex-col gap-[30px] items-center">
-        <div id="nombre" class="flex gap-[50px] ">
-            <div class="flex gap-[10px]">
-                <div class="w-[70px] h-[70px] bg-rose-400 drop-shadow-md rounded-md flex justify-center items-center text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">J</div>
-                <div class="w-[70px] h-[70px] bg-rose-400 drop-shadow-md rounded-md flex justify-center items-center text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">O</div>
-                <div class="w-[70px] h-[70px] bg-rose-400 drop-shadow-md rounded-md flex justify-center items-center text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">V</div>
-                <div class="w-[70px] h-[70px] bg-rose-400 drop-shadow-md rounded-md flex justify-center items-center text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">Y</div>
+    <div class="flex flex-col min-[300px]:gap-[30px] min-[300px]:mt-[30px] sm:gap-[30px] items-center">
+        <div id="nombre" class="flex min-[300px]:flex-col min-[300px]:items-center sm:flex-row min-[300px]:gap-[20px] sm:gap-[50px] ">
+            <div class="flex min-[300px]:gap-[10px] sm:gap-[10px]">
+                <div class="min-[300px]:w-[40px] min-[300px]:h-[40px] sm:w-[70px] sm:h-[70px] bg-rose-400 drop-shadow-sm rounded-sm flex justify-center items-center text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">J</div>
+                <div class="min-[300px]:w-[40px] min-[300px]:h-[40px] sm:w-[70px] sm:h-[70px] bg-rose-400 drop-shadow-sm rounded-sm flex justify-center items-center text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">O</div>
+                <div class="min-[300px]:w-[40px] min-[300px]:h-[40px] sm:w-[70px] sm:h-[70px] bg-rose-400 drop-shadow-sm rounded-sm flex justify-center items-center text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">V</div>
+                <div class="min-[300px]:w-[40px] min-[300px]:h-[40px] sm:w-[70px] sm:h-[70px] bg-rose-400 drop-shadow-sm rounded-sm flex justify-center items-center text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">Y</div>
             </div>
-            <div class="flex gap-[10px]">   
-                <div class="w-[70px] h-[70px] bg-rose-400 rounded-md flex justify-center items-center text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">C</div>
-                <div class="w-[70px] h-[70px] bg-rose-400 rounded-md flex justify-center items-center text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">O</div>
-                <div class="w-[70px] h-[70px] bg-rose-400 rounded-md flex justify-center items-center text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">R</div>
-                <div class="w-[70px] h-[70px] bg-rose-400 rounded-md flex justify-center items-center text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">D</div>
-                <div class="w-[70px] h-[70px] bg-rose-400 rounded-md flex justify-center items-center text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">O</div>
-                <div class="w-[70px] h-[70px] bg-rose-400 rounded-md flex justify-center items-center text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">V</div>
-                <div class="w-[70px] h-[70px] bg-rose-400 rounded-md flex justify-center items-center text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">A</div>
+            <div class="flex min-[300px]:gap-[10px] sm:gap-[10px]">   
+                <div class="min-[300px]:w-[40px] min-[300px]:h-[40px] sm:w-[70px] sm:h-[70px] bg-rose-400 rounded-sm flex justify-center items-center sm:text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">C</div>
+                <div class="min-[300px]:w-[40px] min-[300px]:h-[40px] sm:w-[70px] sm:h-[70px] bg-rose-400 rounded-sm flex justify-center items-center sm:text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">O</div>
+                <div class="min-[300px]:w-[40px] min-[300px]:h-[40px] sm:w-[70px] sm:h-[70px] bg-rose-400 rounded-sm flex justify-center items-center sm:text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">R</div>
+                <div class="min-[300px]:w-[40px] min-[300px]:h-[40px] sm:w-[70px] sm:h-[70px] bg-rose-400 rounded-sm flex justify-center items-center sm:text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">D</div>
+                <div class="min-[300px]:w-[40px] min-[300px]:h-[40px] sm:w-[70px] sm:h-[70px] bg-rose-400 rounded-sm flex justify-center items-center sm:text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">O</div>
+                <div class="min-[300px]:w-[40px] min-[300px]:h-[40px] sm:w-[70px] sm:h-[70px] bg-rose-400 rounded-sm flex justify-center items-center sm:text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">V</div>
+                <div class="min-[300px]:w-[40px] min-[300px]:h-[40px] sm:w-[70px] sm:h-[70px] bg-rose-400 rounded-sm flex justify-center items-center sm:text-[20px] font-bold select-none shadow-lg shadow-rose-300 hover:bg-rose-500">A</div>
             </div>
         </div>
         
         <div class="flex items-center gap-[10px]">
-            <!-- <div tabindex="0" onclick="cambioIzquierda()" class="select-none flex w-[40px] h-[40px] rounded-[50%] bg-[pink]/50 items-center justify-center">
-                <span class="material-symbols-outlined text-black">arrow_back_ios</span>
-            </div> -->
-            <div id="carrusel" class="w-[500px] h-[400px] bg-contain bg-no-repeat bg-center rounded-xl bg-white/30">
+            <div id="carrusel" class="min-[300px]:w-[300px] min-[300px]:h-[300px] sm:w-[500px] sm:h-[400px] bg-contain bg-no-repeat bg-center rounded-xl bg-white/30">
             </div>
-            <!-- <div tabindex="0" onclick="cambioDerecha()" class="select-none flex w-[40px] h-[40px] rounded-[50%] bg-[pink]/50 items-center justify-center">
-                <span class="material-symbols-outlined text-black">arrow_forward_ios</span>
-            </div> -->
         </div>
     </div>
 </body>
